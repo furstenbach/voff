@@ -56,7 +56,3 @@ end
 Then(/^I should see a "([^"]*)" checkbox$/) do |checkbox|
     find("input[type='checkbox']")
 end
-
-Then(/^show me the page$/) do
-  save_and_open_page
-end
