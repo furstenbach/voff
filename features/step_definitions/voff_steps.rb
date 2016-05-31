@@ -1,8 +1,14 @@
+Given(/^following users exists$/) do |table|
+  table.hashes.each do |user|
+    create(:user, name: user[:name], email: user[:email], password: user[:password])
+  end
+end
+
 Given(/^I am on the "([^"]*)"$/) do |page|
   case page
-  when "Home page" then
+   when "home page" then
      visit root_path
-   end
+  end
 end
 
 Then(/^I should see "([^"]*)"$/) do |text|

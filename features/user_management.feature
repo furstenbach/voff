@@ -1,10 +1,13 @@
-Feature: As a user
+Feature: As a visitor
   So that I can engage with the service
   I would like to be able to sign up using facebook or with my email
 
-Scenario: Allows a visitor to see text Welcome
-    Given I am on the "Home page"
-    Then I should see "Welcome"
+Background:
+  Given following users exists
+    | name   | email            | password |
+    | Calle  | calle@gmail.com  | password |
+    | Daniel | daniel@gmail.com | password |
 
-#Background:
-#  Given there is a user with name "Daniel", email "daniel@gmail.com" and password "Password"
+Scenario: Allows a visitor to see text Welcome
+  Given I am on the "home page"
+  Then I should see "Welcome"
