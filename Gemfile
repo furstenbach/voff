@@ -7,6 +7,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
+gem 'gmaps4rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'poltergeist'
+gem 'phantomjs', require: 'phantomjs/poltergeist'
 
 group :development do
   gem 'spring'
