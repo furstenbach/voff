@@ -4,6 +4,7 @@ Given(/^following users exists$/) do |table|
   end
 end
 
+
 Given(/^I am on the "([^"]*)"$/) do |page|
   case page
    when "home page" then
@@ -12,6 +13,8 @@ Given(/^I am on the "([^"]*)"$/) do |page|
      visit new_user_session_path
    when "sign up page" then
      visit new_user_registration_path
+   when "Forgot password page" then
+      visit new_user_password_path
   end
 end
 
@@ -19,10 +22,9 @@ Then(/^I should be on the "([^"]*)"$/) do |page|
   case page
   when "home page" then
      expect(current_path).to eq root_path
-   when "sign up page" then
+  when "sign up page" then
      expect(current_path).to eq new_user_registration_path
-   when "sogin page" then
-   end
+  end
 end
 
 Then(/^I should see "([^"]*)"$/) do |text|
@@ -42,12 +44,17 @@ Then(/^I click on the "([^"]*)" link$/) do |link|
   click_on(link)
 end
 
+
 Given(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
    fill_in(field, with: value)
 end
 
 Given(/^I click on the "([^"]*)" button$/) do |button|
   click_link_or_button button
+end
+
+Then(/^I should see a "([^"]*)" checkbox$/) do |checkbox|
+    find("input[type='checkbox']")
 end
 
 Given(/^I am on the searchpage$/) do
