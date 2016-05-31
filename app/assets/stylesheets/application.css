@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ .map_wrapper {
+   width: 800px;
+ }
+
+ #multi_markers {
+   width: 800px;
+   height: 400px;
+ }
