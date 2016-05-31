@@ -7,6 +7,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
+gem 'gmaps4rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 group :development do
   gem 'spring'
