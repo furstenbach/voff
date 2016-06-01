@@ -11,6 +11,9 @@ gem 'gmaps4rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'poltergeist'
 gem 'phantomjs', require: 'phantomjs/poltergeist'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development do
   gem 'spring'
