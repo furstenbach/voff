@@ -5,3 +5,7 @@ Feature: As a visitor
   Scenario: Allows a user to input a location
     Given I am on the "home page"
     Then I should see the "location" field
+
+  Scenario: Allows a user to input a location
+    Given I am on the "home page"
+    Then I should see the "Date" field
