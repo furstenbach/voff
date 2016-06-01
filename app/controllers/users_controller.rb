@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
-
-  ...
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :finish_signup]
 
   # GET /users/:id.:format
   def show
@@ -31,6 +29,7 @@ class UsersController < ApplicationController
   # GET/PATCH /users/:id/finish_signup
   def finish_signup
     # authorize! :update, @user
+    binding.pry
     if request.patch? && params[:user] #&& params[:user][:email]
       if @user.update(user_params)
         @user.skip_reconfirmation!

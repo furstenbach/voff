@@ -14,8 +14,11 @@ gem 'phantomjs', require: 'phantomjs/poltergeist'
 gem 'omniauth-github'
 gem 'omniauth-facebook'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'dotenv-rails'
 
-group :development do
+group :development, :test do
+  gem 'pry'
+  gem 'pry-byebug'
   gem 'spring'
 end
 
@@ -26,5 +29,4 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'pry'
 end
