@@ -9,8 +9,6 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'gmaps4rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem 'poltergeist'
-gem 'phantomjs', require: 'phantomjs/poltergeist'
 gem 'rails_12factor', group: :production
 
 group :development do
@@ -25,4 +23,6 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'pry'
+  gem 'phantomjs', require: 'phantomjs/poltergeist'
+  gem 'poltergeist'
 end
