@@ -11,6 +11,7 @@ gem 'gmaps4rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'poltergeist'
 gem 'phantomjs', require: 'phantomjs/poltergeist'
+gem 'rails_12factor', group: :production
 
 group :development do
   gem 'spring'
