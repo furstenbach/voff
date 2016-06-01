@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import url("datepicker.css");
  .map_wrapper {
    width: 800px;
  }

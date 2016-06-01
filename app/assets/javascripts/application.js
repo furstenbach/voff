@@ -15,6 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require gmaps/google
+
+//= require bootstrap-datepicker
+
 $(document).ready(function(){
 
   var dogWalkerMap = Gmaps.build('Google');
