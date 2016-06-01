@@ -2,9 +2,8 @@ require 'cucumber/rails'
 require 'capybara/poltergeist'
 require 'rubygems'
 ENV["RAILS_ENV"] ||= 'test'
-require File.expand_path("../../config/environment", __FILE__)
+require File.expand_path("../../../config/environment", __FILE__)
 require 'rspec/rails'
-require 'rspec/autorun'
 
 ActionController::Base.allow_rescue = false
 
