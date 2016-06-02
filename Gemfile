@@ -9,10 +9,17 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'gmaps4rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem 'poltergeist'
-gem 'phantomjs', require: 'phantomjs/poltergeist'
+gem 'geocoder'
+gem 'rails_12factor', group: :production
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'dotenv-rails'
+gem 'stripe'
 
-group :development do
+group :development, :test do
+  gem 'pry'
+  gem 'pry-byebug'
   gem 'spring'
 end
 
@@ -23,5 +30,6 @@ group :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'pry'
+  gem 'phantomjs', require: 'phantomjs/poltergeist'
+  gem 'poltergeist'
 end

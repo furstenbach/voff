@@ -13,10 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
 //= require gmaps/google
-$(document).ready(function(){
 
+//= require bootstrap-datepicker
+
+$(document).ready(function(){
   var dogWalkerMap = Gmaps.build('Google');
     dogWalkerMap.buildMap({ internal: {id: 'multi_markers'}}, function(){
       var markers = dogWalkerMap.addMarkers([
@@ -32,7 +35,6 @@ $(document).ready(function(){
         lat: 57.708870,
         lng: 11.974560
       });
-      
       var overlay = new google.maps.OverlayView();
       overlay.draw = function () {
         this.getPanes().markerLayer.id = 'markers';
