@@ -8,9 +8,8 @@ gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
 gem 'gmaps4rails'
-gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'geocoder'
-gem 'rails_12factor', group: :production
 gem 'omniauth-github'
 gem 'omniauth-facebook'
 gem 'bootstrap', '~> 4.0.0.alpha3'
@@ -31,4 +30,8 @@ group :test do
   gem 'launchy'
   gem 'phantomjs', require: 'phantomjs/poltergeist'
   gem 'poltergeist'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
