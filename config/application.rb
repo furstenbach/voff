@@ -18,6 +18,7 @@ Geocoder::Railtie.insert
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+Dotenv::Railtie.load
 
 module Voff
   class Application < Rails::Application
