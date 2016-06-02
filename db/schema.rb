@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20160601115225) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "name"
-    t.string   "provider"
-    t.string   "uid"
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
