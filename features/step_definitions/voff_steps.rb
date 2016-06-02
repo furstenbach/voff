@@ -24,6 +24,8 @@ Then(/^I should be on the "([^"]*)"$/) do |page|
      expect(current_path).to eq root_path
   when "sign up page" then
      expect(current_path).to eq new_user_registration_path
+  when "search page" then
+     expect(current_path).to eq search_path
   end
 end
 

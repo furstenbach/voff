@@ -6,3 +6,6 @@ $(function(){
     });
 
 });
+function search(){
+  window.location.replace("<%= search_path %>");
+}
