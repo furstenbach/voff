@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post :search, controller: :search, action: :search
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
   root 'welcome#index'
+  resources :charges
 end

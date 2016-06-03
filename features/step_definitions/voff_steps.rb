@@ -15,6 +15,8 @@ Given(/^I am on the "([^"]*)"$/) do |page|
      visit new_user_registration_path
    when "Forgot password page" then
       visit new_user_password_path
+   when "payment page" then
+      visit new_charge_path
   end
 end
 
@@ -38,6 +40,15 @@ Then(/^I should see "([^"]*)" link$/) do |link|
   expect(page).to have_link(link)
 end
 
+Then(/^I should see the"([^"]*)" button$/) do |button|
+  expect(page).to have_button(button)
+end
+
+Given /^I press the "([^\"]*)" button$/ do |button|
+#  page.find('stripe-button-el').click
+click_button button
+end
+
 Then /^show me the page$/ do
   save_and_open_page
 end
@@ -45,7 +56,6 @@ end
 Then(/^I click on the "([^"]*)" link$/) do |link|
   click_on(link)
 end
-
 
 Given(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
    fill_in(field, with: value)
