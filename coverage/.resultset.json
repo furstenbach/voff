@@ -12,41 +12,33 @@
         1,
         null
       ],
-      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/search_controller.rb": [
-        1,
-        1,
-        4,
-        4,
-        null,
-        null
-      ],
       "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/charges_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         0,
         0,
-        null,
-        null
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
       "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/omniauth_callbacks_controller.rb": [
         0,
@@ -72,6 +64,14 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/search_controller.rb": [
         0,
         0,
         0,
@@ -221,6 +221,6 @@
         0
       ]
     },
-    "timestamp": 1464946589
+    "timestamp": 1464954934
   }
 }
