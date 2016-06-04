@@ -6,3 +6,4 @@
  /log/.keep
 .bundle
 .env
+/coverage

@@ -16,6 +16,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'dotenv-rails'
 gem 'stripe'
 gem 'coveralls', require: false
+gem 'simplecov', git: 'https://github.com/colszowka/simplecov'
 gem 'gon'
 
 group :development, :test do
