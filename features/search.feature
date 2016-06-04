@@ -10,10 +10,10 @@ Background:
   |Calle            |kampementsgatan 14   |11538  |Stockholm    |
   |Daniel           |Vasagatan 36         |41124  |Gothenburg   |
 
-@javascript
-Scenario: User sees one pin on the map
-    Given I am on the searchpage
-    Then I should see a pin on the map
+#@javascript
+#Scenario: User sees one pin on the map
+#    Given I am on the searchpage
+#    Then I should see a pin on the map
 
 Scenario: User sees searched place on the page
     Given I am on the "home page"
@@ -24,7 +24,7 @@ Scenario: User sees searched place on the page
 
 Scenario: User sees dogsitters places on the page
     Given I am on the "home page"
-    And I fill in "location" with "Gotheburg"
+    And I fill in "location" with "Gothenburg"
     And I fill in "Date" with "2016-06-03"
     And I click on the "Search" button
-  # Then I should see two pins on the map
+    Then I should see two pins on the map

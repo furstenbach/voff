@@ -1,54 +1,54 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/welcome_controller.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/welcome_controller.rb": [
         1,
         null
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/application_controller.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/search_controller.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/search_controller.rb": [
         1,
         1,
-        4,
-        4,
+        2,
+        2,
         null,
         null
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/charges_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/charges_controller.rb": [
         0,
         0,
-        null,
-        null
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/omniauth_callbacks_controller.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/omniauth_callbacks_controller.rb": [
         0,
         0,
         0,
@@ -79,7 +79,7 @@
         0,
         0
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/controllers/users_controller.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/controllers/users_controller.rb": [
         0,
         0,
         0,
@@ -144,11 +144,11 @@
         0,
         0
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/helpers/application_helper.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/helpers/application_helper.rb": [
         0,
         0
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/models/identity.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/models/identity.rb": [
         0,
         0,
         0,
@@ -159,7 +159,7 @@
         0,
         0
       ],
-      "/Users/yanzhang/Documents/CraftAcademy/Voff/voff/app/models/user.rb": [
+      "/Users/jennyfurstenbach/Desktop/Jenny/Craftacademy/voff/app/models/user.rb": [
         0,
         0,
         0,
@@ -221,6 +221,6 @@
         0
       ]
     },
-    "timestamp": 1464958414
+    "timestamp": 1465045388
   }
 }
