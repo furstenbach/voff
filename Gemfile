@@ -15,6 +15,7 @@ gem 'omniauth-facebook'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'dotenv-rails'
 gem 'stripe'
+gem 'coveralls', require: false
 
 group :development, :test do
   gem 'pry'
