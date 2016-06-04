@@ -4,6 +4,9 @@ require 'rubygems'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'coveralls'
+Coveralls.wear!('rails')
+
 
 
 ActionController::Base.allow_rescue = false

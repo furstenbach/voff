@@ -123,5 +123,3 @@ Scenario: Allows a visitor to see text Welcome
       And I fill in "Password confirmation" with "12345678"
       And I click on the "Create" button
       Then I should see "Email has already been taken"
-
-    

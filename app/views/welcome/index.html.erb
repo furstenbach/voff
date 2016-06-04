@@ -1,20 +1,14 @@
 <h1>Welcome</h1>
-
-
-</div>
   <div class="row">
-
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
         <form class="form-inline" role="form" action="/search" method="post" id="search_form">
           <div class="form-group">
-          <input type="text" name="location" class="form-control" placeholder="Search location or zip">
+          <input type="text" name="location" id="autocomplete" onFocus="geolocate()" class="form-control" placeholder="Search location or zip">
           <input type="text" id="datepicker" name="Date" class="form-control" value="<%=Time.new.to_date.to_s %>">
           <input type="submit" value="Search" class="btn btn-success" onclick="search()"/>
           </div>
         </form>
-
     </div>
     <div class="col-sm-3"></div>
-
   </div>

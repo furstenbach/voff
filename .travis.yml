@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.2.1
+before_script:
+- bundle exec rake db:setup
+script:
+- bundle exec rspec
+- bundle exec cucumber
+deploy:
+  provider: heroku
+  api_key:
+    secure: XephysF3aeEGAK65jJK7P97rHJM1zR2AwNvS5ssPG9lXjJLhlxiWH0l6uqOJu+z6gQLHVOyXpJQ/et9i1Q7fF6I9wVX9CeHrn7sGyoFQh9BRNqW16k/UFrZh7TAE3pKTnqYAQtGW2VyfmCaNIlIkJ//WUiNaqHJpIJ7TR8QW/rSlFFi8+3/+R3k6ixFDZBlehYHlIquyv3M7BjgwHeIVeFzAYaZXR7ys7rlcVpquggsxge1P0GLRnPxHZmXGHLwbdKDg8tLecDZk4eelUHypOT+mqnKApBcMiOvG5K/PhBYkK9FCdlHxKGDwT7oNgu3KFlemICI/kN5G89zAA16+IBUcfakhWCIcKyRb1ec5/Gi/DuiVlFeTlEeDFYlM74AtfJymPOETxI+pEidRfM4grSCjy1LUYC5eCGrFHGzyzAV/C30gGHLbxt2W63cj33km/LuYSbUbyWsVTwF0dzx0cPxNLnQSf0J0rTTHMXNNhdxWj12QWpG3lyufjN1GTAZyif68QHHxTutQbdE1m29v0ISz0UCai3VL1BthxQeF0peFZXSth6grqi5VYNCi51wCQ1FdNpwCrDVGj7Pmvim33KS5f6ccpxHMiQOoXje0CN/94k0Jjvf6oLnIoUbndnHIvxaEdhthzK+dwu161awqeSYvcy8T8hDHIE1WKLI01dY=
