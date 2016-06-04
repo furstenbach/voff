@@ -1,3 +1,4 @@
+require 'rails_helper'
 require 'coveralls'
 Coveralls.wear_merged!('rails')
 RSpec.configure do |config|
