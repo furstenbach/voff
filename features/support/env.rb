@@ -5,7 +5,10 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'coveralls'
-Coveralls.wear!('rails')
+require 'gon'
+require 'phantomjs'
+
+Coveralls.wear_merged!('rails')
 
 
 
@@ -20,4 +23,11 @@ end
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
 World(FactoryGirl::Syntax::Methods)
+
 Capybara.javascript_driver = :poltergeist
+
+options = {js_errors: false}
+
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, :phantomjs => Phantomjs.path)
+end
