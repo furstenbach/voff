@@ -1,13 +1,13 @@
+
+$(document).ready( function() {
+  setTimeout(function(){getLatitudeLongitude(showResult, gon.location.toString())},10);
+});
+
 function initMap() {
        var map = new google.maps.Map(document.getElementById('map'), {
          zoom: 13,
          center: {lat: -34.397, lng: 150.644}
        });
-       var geocoder = new google.maps.Geocoder();
-       alert(gon.location.toString());
-       // document.getElementById('submit').addEventListener('click', function() {
-       //   geocodeAddress(geocoder, map);
-       // });
 }
 
 function getLatitudeLongitude(callback, address) {
@@ -25,11 +25,12 @@ function getLatitudeLongitude(callback, address) {
         });
     }
 }
-
+//Show the map close to the current selected area
 function showResult(result) {
-    var lat = result.geometry.location.lat().toString();
-    var lng = result.geometry.location.lng().toString();
-    alert(lat + " " + lng);
+    var map = new google.maps.Map(document.getElementById('map'));
+    map.setZoom(13);
+    map.setCenter(result.geometry.location);
+    map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
 }
 
 
